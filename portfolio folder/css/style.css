@@ -1,0 +1,269 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+/*Nav-bar-tab*/
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 7%;
+	position: relative;
+	z-index: 1;
+}
+
+
+.navbar a{
+	color: #000000;
+	text-decoration: none;
+	font-family: "Quattrocento Sans", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	font-size: 17px;
+  	margin: 0px 15px;
+}
+
+#check{
+	display: none;
+}
+
+.icons{
+	position: absolute;
+	right: 5%;
+	font-size: 2.2rem;
+	color: #01000F;
+	cursor: pointer;
+	display: none;
+}
+
+.header button{
+	padding: 9px 20px;
+	background-color: #01000F;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	color: #ffffff;
+	font-family: "Quattrocento Sans", sans-serif;
+  	font-weight: 700;
+  	font-style: normal;
+  	font-size: 15px;
+}
+
+
+@media (max-width: 992px) {
+	.header{
+		padding: 3.3rem 5%;
+	}
+}
+
+@media (max-width: 768px) {
+	.icons{
+		display: block;
+	}
+
+	#check:checked~.icons #menu-icon{
+		display: none;
+	}
+
+	.icons #close-icon{
+		display: none;
+	}
+
+	#check:checked~.icons #close-icon{
+		display: block;
+	}
+
+	.navbar{
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 30%;
+		height: 0;
+		background: #ffffff;
+		border-radius: 2%;
+		overflow: hidden;
+		transition: .7s ease;
+		margin: auto 50%;
+	}
+
+	#check:checked~.navbar{
+		position: absolute;
+		width: 50%;
+		height: 17rem;
+		display: block;
+	}
+
+	.navbar a{
+		display: block;
+		font-size: 1rem;
+		margin: 1.5rem 0;
+		text-align: left;
+		padding-left: 20px;
+		transform: translateY(-10px);
+		transition: .3s ease;
+		color: #01000F;
+	}
+}
+
+/*end*/
+
+/*Product-Viz-group*/
+
+#portfolio{
+	display: flex;
+	justify-content: center;
+	font-family: "mulish";
+  	font-weight: 400;
+  	font-style: normal;
+  	font-size: 17px;
+  	color: #000000;
+
+}
+
+.text-with-line p{
+	margin-top: 25px;
+}
+
+
+.text-with-line {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+
+.text-with-line::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	height: 1px; 
+	background-color: black; 
+	list-style: circle;
+}
+
+/* Style for the image */
+.image-after-line {
+	display: block;
+	margin-top: 10px;
+}
+/*end*/
+
+
+/*FOOTER-SECTION*/
+
+#footer .footer_logo_text_edit{
+	text-align: center;
+}
+
+#footer .footer_logo_text_edit img{
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+
+#footer .footer_logo_text_edit p{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 50px;
+}
+
+/*main-footer*/
+
+.footer-col_1{
+	float: left;
+	text-align: left;
+}
+
+.footer-col_1 li, .footer-col_1 a{
+	list-style: none;
+	text-decoration: none;
+	padding-bottom: 20px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: black;
+	margin-left: 10px;
+}
+
+.footer-col_2{
+	text-align: right;
+	float: right;
+}
+
+.footer-col_2 li, .footer-col_2 a{
+	list-style: none;
+	text-decoration: none;
+	padding-bottom: 20px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: black;
+	margin-right: 10px;
+}
+
+.footer-col_1 h4{
+	margin-bottom: 30px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.footer-col_2 h4{
+	margin-bottom: 30px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.footer-col_1 a:hover{
+	padding-left: 3px;
+}
+
+.footer-col_2 a:hover{
+	padding-right: 3px;
+}
+
+.footer-col_1 .a{
+	text-decoration: underline;
+	color: black;
+}
+
+/*FOOTER-COL_ICON*/
+
+.footer-col_icon{
+	margin: 80% 0px 10% 15px;
+}
+
+.footer-col_icon a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	margin: 0px 10px 10px 0px ;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.contact_text{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.contact_text .p{
+	margin-bottom: 20px;
+}
+
+/*end*/
